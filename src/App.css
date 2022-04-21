@@ -1,0 +1,119 @@
+body{
+  padding-top: 64px !important;
+  color: #bfc1c8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.font-14{font-size: 14px;}
+.banner{
+  background-image: url('./i/banner.png');
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.form-control {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.find-location {
+  position: relative;
+  margin-bottom: 70px;
+}
+.searchInput{
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+}
+.searchBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+}
+
+.forecast-container {
+  width: 100%;
+  background: #323544;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.forecast .forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+.forecast .forecast-content {
+  padding: 30px 30px 10px;
+  text-align: center;
+}
+.forecast.today .forecast-header{
+  justify-content: space-between;
+}
+.forecast:not(.today) .forecast-header{
+  justify-content: center;
+}
+.forecast:not(.today) .forecast-header .date{
+  display: none;
+}
+.forecast.today .forecast-content {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-width: 420px;
+}
+.forecast.today .location {
+  font-size: 18px;
+  font-size: 1.2857142857em;
+  font-weight: 400;
+}
+.forecast:not(.today) .location {
+  display: none;
+}
+.forecast-content .degree {
+  font-size: 24px;
+  font-size: 1.7142857143em;
+  color: white;
+  font-weight: 700;
+}
+.forecast.today .degree .num {
+  font-size: 90px;
+  font-size: 6.4285714286rem;
+  margin-right: 30px;
+}
+.forecast.today .degree .num, .forecast.today .degree .forecast-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.forecast:not(.today) .degree {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.forecast:not(.today) .degree .num {
+  margin-top: 25px;
+}
+.forecast.today span {
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+.forecast:not(.today) span {
+  display: none;
+}
+.forecast.today span img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.forecast:nth-child(even) {
+  background-color: #262936;
+}
+.top10{top: 5px;}
